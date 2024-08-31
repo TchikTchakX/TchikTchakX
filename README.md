@@ -1,6 +1,6 @@
 - 👋 Hi, I’m TchikTchak
 - 👀 I’m interested in learning all I can 🤓
-- 🌱 I’m currently learning web3 basis, beginner with coding,3D,...
+- 🌱 I’m currently learning front end, web3 basis,...
 - 💞️ I’m looking to collaborate on creating a large web3's community
 - 📫 How to reach me, on Twitter: tchiktchak.crypto 
 
