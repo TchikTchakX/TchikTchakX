@@ -37,6 +37,7 @@
 ![ethers.js](https://img.shields.io/badge/ethers.js-2535a0?style=for-the-badge&logo=ethereum&logoColor=white)
 ![Web3](https://img.shields.io/badge/@solana/web3.js-000000?style=for-the-badge&logo=solana&logoColor=14F195)
 ![ENS](https://img.shields.io/badge/ENS-5284FF?style=for-the-badge&logo=ethereum-name-service&logoColor=white)
+![Handshake](https://img.shields.io/badge/Handshake-000000?style=for-the-badge&logo=handshake&logoColor=white)
 
 <br/>
 
