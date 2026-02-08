@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a20,50:5000ff,100:14F195&height=200&section=header&text=Tchik%20Tchak&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Frontend%20Engineer%20%C2%B7%20Web3&descSize=18&descColor=50ffFF&descAlignY=55&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a20,35:5000ff,65:b0ff00,100:14F195&height=200&section=header&text=Tchik%20Tchak&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Frontend%20Engineer%20%C2%B7%20Web3&descSize=18&descColor=50ffFF&descAlignY=55&animation=fadeIn" width="100%" />
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1000&color=50FFFF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Building+browser-native+tools+that+talk+to+blockchains;No+backend+%C2%B7+No+API+keys+%C2%B7+No+framework;Just+vanilla+JS%2C+RPC+nodes%2C+and+async+debugging" alt="Typing SVG" /></a>
 
@@ -257,4 +257,4 @@ I audit my own code before shipping:
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a20,50:5000ff,100:14F195&height=120&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a20,35:5000ff,65:b0ff00,100:14F195&height=120&section=footer" width="100%" />
