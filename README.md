@@ -110,9 +110,7 @@
 
 <div align="center">
 
-<a href="https://github.com/TchikTchakX/freenamers">
-<img src="https://img.shields.io/badge/%F0%9F%94%A8_COMING_SOON-Freenamers-0a0a20?style=for-the-badge&labelColor=5000ff" />
-</a>
+<img src="https://img.shields.io/badge/%F0%9F%94%92_PRIVATE-Freenamers-0a0a20?style=for-the-badge&labelColor=5000ff" />
 
 <br/><br/>
 
@@ -155,6 +153,39 @@
 <td align="center"><strong>Coming soon</strong><br/><sub>Private repo · In development</sub></td>
 </tr>
 </table>
+
+<br/>
+
+---
+
+<br/>
+
+<img src="https://img.shields.io/badge/%F0%9F%94%92_PRIVATE-Community_App-0a0a20?style=for-the-badge&labelColor=14F195" />
+
+<br/><br/>
+
+**The Web3 Domain Swiss Knife**
+
+`All-in-one toolkit` · `Web2 + Web3 utilities` · `Domain management` · `Community-driven`
+
+<br/>
+
+<table>
+<tr>
+<td align="center"><strong>Web2 tools</strong><br/><sub>DNS, WHOIS, analytics</sub></td>
+<td align="center"><strong>Web3 tools</strong><br/><sub>On-chain lookups & management</sub></td>
+<td align="center"><strong>Community</strong><br/><sub>Built for domain holders</sub></td>
+<td align="center"><strong>Coming soon</strong><br/><sub>Private repo · In development</sub></td>
+</tr>
+</table>
+
+<br/>
+
+---
+
+<br/>
+
+> *More Web2 & Web3 domain utilities are in the works — everything a domain owner needs, in one place.*
 
 </div>
 
