@@ -1,4 +1,4 @@
-# Hi, I'm TchikTchakX
+# Hi, I'm Tchik Tchak
 
 I build frontend applications that interact directly with smart contracts from the browser. No backend, no API keys, no framework — just vanilla JS, RPC nodes, and a lot of async debugging.
 
