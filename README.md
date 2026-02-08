@@ -160,7 +160,7 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/%F0%9F%94%92_PRIVATE-Community_App-0a0a20?style=for-the-badge&labelColor=14F195" />
+<img src="https://img.shields.io/badge/%F0%9F%94%92_PRIVATE-Community_App-0a0a20?style=for-the-badge&labelColor=40F19A" />
 
 <br/><br/>
 
