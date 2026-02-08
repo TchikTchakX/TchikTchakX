@@ -135,22 +135,22 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/%F0%9F%94%92_PRIVATE-tldshns-0a0a20?style=for-the-badge&labelColor=000000" />
+<img src="https://img.shields.io/badge/%F0%9F%94%92_PRIVATE-TLDsHNS-0a0a20?style=for-the-badge&labelColor=000000" />
 
 <br/><br/>
 
-**Handshake TLD Research & Collaboration Tool**
+**Decentralized Marketplace & Social Signaling for Handshake TLDs**
 
-`TLD explorer` · `Collaborative dashboard` · `Availability alerts` · `HNS ecosystem`
+`SEARCH` · `SIGNAL` · `ACQUIRE`
 
 <br/>
 
 <table>
 <tr>
-<td align="center"><strong>Search</strong><br/><sub>Explore & filter HNS TLDs</sub></td>
-<td align="center"><strong>Collaborate</strong><br/><sub>Share & discuss research</sub></td>
-<td align="center"><strong>Monitor</strong><br/><sub>Alerts on TLD availability</sub></td>
-<td align="center"><strong>Coming soon</strong><br/><sub>Private repo · In development</sub></td>
+<td align="center"><strong>Search</strong><br/><sub>Explore & filter<br/>Handshake TLDs</sub></td>
+<td align="center"><strong>Signal</strong><br/><sub>Show demand for unlisted TLDs<br/>· Social proof for owners</sub></td>
+<td align="center"><strong>Acquire</strong><br/><sub>Buy listed TLDs<br/>directly on-chain</sub></td>
+<td align="center"><strong>Coming soon</strong><br/><sub>Private repo<br/>· In development</sub></td>
 </tr>
 </table>
 
