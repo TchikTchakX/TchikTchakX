@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200" fill="none">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .header {
+          width: 100%;
+          height: 200px;
+          background: linear-gradient(135deg, #0a0a20 0%, #150a30 35%, #0a1a1a 65%, #0a0a20 100%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          overflow: hidden;
+          font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+        .orb {
+          position: absolute;
+          border-radius: 50%;
+          filter: blur(80px);
+          animation: drift 8s ease-in-out infinite alternate;
+        }
+        .orb-1 {
+          width: 300px; height: 300px;
+          background: #5000ff;
+          opacity: 0.2;
+          left: 15%; top: -40%;
+        }
+        .orb-2 {
+          width: 250px; height: 250px;
+          background: #14F195;
+          opacity: 0.12;
+          right: 15%; bottom: -40%;
+          animation-delay: -4s;
+        }
+        .orb-3 {
+          width: 150px; height: 150px;
+          background: #50FFFF;
+          opacity: 0.08;
+          left: 50%; top: 20%;
+          transform: translateX(-50%);
+          animation-delay: -2s;
+        }
+        @keyframes drift {
+          0% { transform: translate(0, 0) scale(1); }
+          100% { transform: translate(10px, -10px) scale(1.08); }
+        }
+        .content {
+          position: relative;
+          z-index: 1;
+          text-align: center;
+        }
+        .name {
+          font-size: 52px;
+          font-weight: 800;
+          color: #ffffff;
+          letter-spacing: -2px;
+          line-height: 1;
+        }
+        .subtitle {
+          font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', monospace;
+          font-size: 14px;
+          color: #50FFFF;
+          margin-top: 14px;
+          letter-spacing: 1px;
+        }
+        .sep { color: #5000ff; margin: 0 2px; }
+        .line {
+          width: 60px;
+          height: 2px;
+          background: linear-gradient(90deg, #5000ff, #14F195);
+          margin: 16px auto 0;
+          border-radius: 1px;
+        }
+      </style>
+      <div class="header">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="content">
+          <div class="name">Tchik Tchak</div>
+          <div class="subtitle">Frontend Engineer <span class="sep">/</span> Web3 <span class="sep">/</span> Digital Sovereignty</div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>

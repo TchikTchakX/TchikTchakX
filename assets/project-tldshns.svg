@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="1200" height="180" fill="none">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .card {
+          width: 100%;
+          height: 180px;
+          background: linear-gradient(135deg, #0c0c1e 0%, #0a1510 60%, #0c0c1e 100%);
+          border-radius: 12px;
+          border: 1px solid rgba(20,241,149,0.12);
+          display: flex;
+          align-items: center;
+          padding: 28px 36px;
+          position: relative;
+          overflow: hidden;
+          font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+        .glow {
+          position: absolute;
+          width: 200px; height: 200px;
+          border-radius: 50%;
+          background: #14F195;
+          filter: blur(80px);
+          opacity: 0.08;
+          right: 5%; top: -40%;
+        }
+        .info { position: relative; z-index: 1; }
+        .badge {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 9px;
+          font-weight: 700;
+          letter-spacing: 1.5px;
+          text-transform: uppercase;
+          color: #14F195;
+          background: rgba(20,241,149,0.08);
+          border: 1px solid rgba(20,241,149,0.15);
+          padding: 3px 10px;
+          border-radius: 4px;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+        .title {
+          font-size: 22px;
+          font-weight: 700;
+          color: #ffffff;
+          margin-bottom: 4px;
+        }
+        .desc {
+          font-size: 13px;
+          color: rgba(255,255,255,0.5);
+          margin-bottom: 14px;
+        }
+        .stack { display: flex; gap: 8px; flex-wrap: wrap; }
+        .t {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          color: rgba(255,255,255,0.35);
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.06);
+          padding: 3px 8px;
+          border-radius: 4px;
+        }
+        .features {
+          position: absolute;
+          right: 36px;
+          top: 50%;
+          transform: translateY(-50%);
+          display: flex;
+          gap: 24px;
+          z-index: 1;
+        }
+        .feat { text-align: center; }
+        .feat-label {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          font-weight: 600;
+          color: rgba(255,255,255,0.7);
+          margin-bottom: 4px;
+        }
+        .feat-sub {
+          font-size: 10px;
+          color: rgba(255,255,255,0.3);
+        }
+      </style>
+      <div class="card">
+        <div class="glow"></div>
+        <div class="info">
+          <div class="badge">Private</div>
+          <div class="title">TLDsHNS</div>
+          <div class="desc">Marketplace and Social Signaling for Handshake TLDs</div>
+          <div class="stack">
+            <span class="t">Next.js</span>
+            <span class="t">Express</span>
+            <span class="t">PostgreSQL</span>
+            <span class="t">SIWE Auth</span>
+            <span class="t">Self-hosted</span>
+          </div>
+        </div>
+        <div class="features">
+          <div class="feat">
+            <div class="feat-label">Signal</div>
+            <div class="feat-sub">Collaborative demand</div>
+          </div>
+          <div class="feat">
+            <div class="feat-label">P2P Trade</div>
+            <div class="feat-sub">Wallet-native sales</div>
+          </div>
+          <div class="feat">
+            <div class="feat-label">Sovereign</div>
+            <div class="feat-sub">EU VPS, no cloud</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
