@@ -107,7 +107,7 @@
 > **The real challenge:** handling providers that silently fail (returning `null` instead of an error)
 > while keeping response times acceptable for the user.
 >
-> *Four providers · Three blockchains · Different failure modes · One search bar*
+> *Multiple providers · Multiple blockchains · Different failure modes · One search bar*
 
 </div>
 
@@ -129,7 +129,7 @@
 
 **Universal Web3 Domain Resolver**
 
-`1 search bar` · `7 blockchains` · `4 name service providers` · `0 backend`
+`1 search bar` · `Multiple blockchains` · `Multiple name providers` · `0 backend`
 
 <br/>
 
