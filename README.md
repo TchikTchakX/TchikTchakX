@@ -38,7 +38,7 @@
 
 <br/>
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Puzzle%20Piece.png" width="28" /> &nbsp;Why this combination is unusual
+## :jigsaw: &nbsp;Why this combination is unusual
 
 <br/>
 
@@ -78,7 +78,7 @@
 
 <br/>
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="28" /> &nbsp;What I've built
+## :rocket: &nbsp;What I've built
 
 <br/>
 
@@ -103,21 +103,21 @@
 <br/>
 
 <details>
-<summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Magnifying%20Glass%20Tilted%20Left.png" width="20" /> <strong>&nbsp;Audit methodology</strong> — I audit my own code before shipping</summary>
+<summary>:mag: <strong>&nbsp;Audit methodology</strong> / I audit my own code before shipping</summary>
 
 <br/>
 
 | | Axe | What I check |
 |:---:|---|---|
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" width="20" /> | **Reliability** | Retry, fallback, circuit breaker, cache. Every failure path covered? |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/High%20Voltage.png" width="20" /> | **Performance** | Time budget per resolution path, redundant RPC calls, timeout calibration |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked.png" width="20" /> | **Security** | XSS via on-chain records, input validation, no client-side secrets, CSP |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="20" /> | **Maintainability** | Coupling with third-party libs, technical debt, error handling consistency |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Symbols/Check%20Mark%20Button.png" width="20" /> | **Correctness** | Owner vs manager vs resolved address, stale cache, race conditions |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Microscope.png" width="20" /> | **Edge cases** | Expired domains, 100+ domain wallets, ad-blockers, empty records |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Artist.png" width="20" /> | **UX under constraint** | Progressive feedback during 3-10s waits, skeleton loading, typed errors |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="20" /> | **Observability** | Sentry breadcrumbs, error rates by provider, Discord user feedback |
-| <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="20" /> | **Browser compat** | Ad-blocker vs RPCs, neutral URL choices, no wallet extension needed |
+| :shield: | **Reliability** | Retry, fallback, circuit breaker, cache. Every failure path covered? |
+| :zap: | **Performance** | Time budget per resolution path, redundant RPC calls, timeout calibration |
+| :lock: | **Security** | XSS via on-chain records, input validation, no client-side secrets, CSP |
+| :gear: | **Maintainability** | Coupling with third-party libs, technical debt, error handling consistency |
+| :white_check_mark: | **Correctness** | Owner vs manager vs resolved address, stale cache, race conditions |
+| :microscope: | **Edge cases** | Expired domains, 100+ domain wallets, ad-blockers, empty records |
+| :art: | **UX under constraint** | Progressive feedback during 3-10s waits, skeleton loading, typed errors |
+| :bar_chart: | **Observability** | Sentry breadcrumbs, error rates by provider, Discord user feedback |
+| :desktop_computer: | **Browser compat** | Ad-blocker vs RPCs, neutral URL choices, no wallet extension needed |
 
 </details>
 
@@ -125,11 +125,11 @@
 
 <div align="center">
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Incoming%20Envelope.png" width="28" /> &nbsp;Get in touch
+## :incoming_envelope: &nbsp;Get in touch
 
 <br/>
 
-Building in the Handshake ecosystem? Working on digital sovereignty tools? Let's talk.
+Building in the ecosystem? Working on digital sovereignty tools? Let's talk.
 
 <br/>
 

@@ -1,28 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" fill="none">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         .grid {
           width: 100%;
-          height: 240px;
+          height: 420px;
           display: flex;
-          gap: 12px;
-          padding: 8px;
+          gap: 14px;
+          padding: 10px;
           font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
         }
         .card {
           flex: 1;
-          border-radius: 12px;
-          padding: 20px;
+          border-radius: 14px;
+          padding: 32px 24px;
           position: relative;
           overflow: hidden;
         }
         .card::after {
           content: '';
-          position: absolute;
-          inset: 0;
-          border-radius: 12px;
+          position: absolute; inset: 0;
+          border-radius: 14px;
           border: 1px solid rgba(255,255,255,0.06);
           pointer-events: none;
         }
@@ -31,10 +30,9 @@
         .c-back { background: linear-gradient(160deg, #0e0e1e 0%, #0c0c1e 100%); }
         .glow {
           position: absolute;
-          width: 100px; height: 100px;
+          width: 140px; height: 140px;
           border-radius: 50%;
-          filter: blur(50px);
-          opacity: 0.2;
+          filter: blur(60px); opacity: 0.2;
           right: -10px; top: -10px;
         }
         .c-front .glow { background: #5000ff; }
@@ -42,32 +40,30 @@
         .c-back .glow { background: #475569; opacity: 0.1; }
         .label {
           font-family: 'JetBrains Mono', 'Fira Code', monospace;
-          font-size: 10px;
-          font-weight: 700;
-          letter-spacing: 2.5px;
-          text-transform: uppercase;
-          margin-bottom: 16px;
+          font-size: 16px; font-weight: 700;
+          letter-spacing: 2.5px; text-transform: uppercase;
+          margin-bottom: 28px;
         }
         .c-front .label { color: #8B5CF6; }
         .c-web3 .label { color: #14F195; }
         .c-back .label { color: #64748B; }
-        .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 10px; }
         .tag {
           font-family: 'JetBrains Mono', 'Fira Code', monospace;
-          font-size: 11px;
-          padding: 4px 10px;
-          border-radius: 6px;
-          color: rgba(255,255,255,0.75);
+          font-size: 16px;
+          padding: 10px 16px;
+          border-radius: 8px;
+          color: rgba(255,255,255,0.85);
         }
         .c-front .tag { background: rgba(139,92,246,0.12); border: 1px solid rgba(139,92,246,0.18); }
         .c-web3 .tag { background: rgba(20,241,149,0.08); border: 1px solid rgba(20,241,149,0.12); }
         .c-back .tag { background: rgba(100,116,139,0.08); border: 1px solid rgba(100,116,139,0.12); }
         .note {
           font-family: 'JetBrains Mono', monospace;
-          font-size: 10px;
+          font-size: 14px;
           color: rgba(255,255,255,0.25);
           font-style: italic;
-          margin-top: 14px;
+          margin-top: 24px;
         }
       </style>
       <div class="grid">
