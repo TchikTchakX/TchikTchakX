@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a20,35:5000ff,65:b0ff00,100:14F195&height=200&section=header&text=Tchik%20Tchak&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Frontend%20Engineer%20%C2%B7%20Web3&descSize=18&descColor=50ffFF&descAlignY=55&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a20,35:5000ff,65:b0ff00,100:14F195&height=200&section=header&text=Tchik%20Tchak&fontSize=50&fontColor=ffffff&fontAlignY=35&desc=Frontend%20Engineer%20%C2%B7%20Web3%20%C2%B7%20Digital%20Sovereignty&descSize=18&descColor=50ffFF&descAlignY=55&animation=fadeIn" width="100%" />
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1500&color=50FFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=Always+learning+%C2%B7+Always+shipping+%C2%B7+Open+to+new+challenges;Web3+is+the+focus,+but+not+the+ceiling" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1500&color=50FFFF&center=true&vCenter=true&repeat=true&width=650&height=35&lines=Building+tools+for+digital+ownership+%C2%B7+Not+your+keys,+not+your+names;Self-hosted+%C2%B7+Open+protocols+%C2%B7+User-owned+data" alt="Typing SVG" /></a>
 
 </div>
 
@@ -19,11 +19,14 @@
 <br/>
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
 <br/>
 
@@ -39,6 +42,16 @@
 ![Polygon](https://img.shields.io/badge/Polygon-8247E5?style=for-the-badge&logo=polygon&logoColor=white)
 ![ethers.js](https://img.shields.io/badge/ethers.js-2535a0?style=for-the-badge&logo=ethereum&logoColor=white)
 ![Web3](https://img.shields.io/badge/@solana/web3.js-000000?style=for-the-badge&logo=solana&logoColor=14F195)
+<br/>
+
+**`BACKEND (when needed)`**
+
+<br/>
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+
 <br/>
 
 **`RESILIENCE ENGINEERING`**
@@ -139,18 +152,18 @@
 
 <br/><br/>
 
-**Decentralized Marketplace & Social Signaling for Handshake TLDs**
+**Marketplace & Social Signaling for Handshake TLDs**
 
-`SEARCH` · `SIGNAL` · `ACQUIRE`
+`Next.js` · `Express` · `PostgreSQL` · `SIWE Auth` · `Self-hosted`
 
 <br/>
 
 <table>
 <tr>
-<td align="center"><strong>Search</strong><br/><sub>Explore & filter<br/>Handshake TLDs</sub></td>
-<td align="center"><strong>Signal</strong><br/><sub>Show demand for unlisted TLDs<br/>· Social proof for owners</sub></td>
-<td align="center"><strong>Acquire</strong><br/><sub>Buy listed TLDs<br/>directly on-chain</sub></td>
-<td align="center"><strong>Coming soon</strong><br/><sub>Private repo<br/>· In development</sub></td>
+<td align="center"><strong>Signal</strong><br/><sub>Collaborative demand<br/>for unlisted TLDs</sub></td>
+<td align="center"><strong>Negotiate</strong><br/><sub>Built-in messaging<br/>with offer system</sub></td>
+<td align="center"><strong>Marketplace</strong><br/><sub>List, search & manage<br/>TLD inventory</sub></td>
+<td align="center"><strong>Sovereign</strong><br/><sub>EU-hosted VPS<br/>No cloud dependencies</sub></td>
 </tr>
 </table>
 
@@ -212,26 +225,6 @@ I audit my own code before shipping:
 | <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People/Artist.png" width="20" /> | **UX under constraint** | Progressive feedback during 3-10s waits, skeleton loading, typed errors |
 | <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="20" /> | **Observability** | Sentry breadcrumbs, error rates by provider, Discord user feedback |
 | <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Desktop%20Computer.png" width="20" /> | **Browser compat** | Ad-blocker vs RPCs, neutral URL choices, no wallet extension needed |
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="100%" />
-
-<br/>
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png" width="28" /> &nbsp;What I'm not
-
-<br/>
-
-<div align="center">
-
-| | |
-|:---:|---|
-| <img src="https://img.shields.io/badge/Not_a_Solidity_dev-grey?style=flat-square" /> | I read contracts, I don't write them |
-| <img src="https://img.shields.io/badge/Not_a_fullstack_eng-grey?style=flat-square" /> | No backend by design. The constraints led to vanilla JS and it was the right call |
-| <img src="https://img.shields.io/badge/No_React_/_Vue-grey?style=flat-square" /> | Bundle size, load time, lazy-loading blockchain SDKs. A framework would get in the way |
-
-</div>
 
 <br/>
 
