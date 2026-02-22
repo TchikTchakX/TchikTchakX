@@ -11,7 +11,7 @@
 <div align="center">
 
 > I build tools that put naming ownership back in users' hands.
-> No cloud gatekeepers. Self-hosted infrastructure. Open protocols only.
+> No cloud gatekeepers. Self-hosted infrastructure.
 
 </div>
 
