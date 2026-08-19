@@ -26,6 +26,11 @@ Freenamers ran until August 2026. The site closed; the resolver didn't.
 
 ### What I work with
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/families-dark.svg">
+  <img src="./assets/families-light.svg" width="100%" alt="Five families of naming systems of different kinds, one question asked of each. They agree on nothing, not even on what a name is.">
+</picture>
+
 **Core frontend.** JavaScript (async/await, promises, race conditions, ES modules), HTML/CSS without a framework, Vite, Git.
 
 **Chain reading. No name-service SDK, on any chain.** viem for EVM, `@solana/web3.js` for Solana, Clarity reads on Stacks. Those are primitives: hashing and transport. Before any of it, a name has to become an identifier, and that part is written here:
@@ -37,6 +42,8 @@ Freenamers ran until August 2026. The site closed; the resolver didn't.
 | SNS | a program-derived account |
 | BNS | a Clarity principal |
 | ENS multichain records | a chain-specific address |
+
+Four of those five are written down somewhere public. Freename isn't: it publishes no spec for how a name becomes a token id. I worked that derivation out by reading the contract, and it has been in production ever since.
 
 **The part that doesn't show in a stack list.** Resilience engineering for networks you don't control. Public nodes rate-limit you, disagree with each other, answer slowly, or answer `null` when they mean *I don't know*. Names arrive that look identical and aren't. Most of the work is there, and none of it is visible when it goes right.
 
