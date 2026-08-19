@@ -1,148 +1,77 @@
-<div align="center">
+# Hi, I'm TchikTchakX
 
-<img src="./assets/header.svg" width="100%" />
+I build browser-only clients that read blockchains directly. For that kind of work: no backend, no API keys, no framework. Just vanilla JS, RPC nodes, and a lot of async debugging.
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=1500&color=50FFFF&center=true&vCenter=true&repeat=true&width=780&height=35&lines=Building+tools+for+digital+ownership+%C2%B7+Not+your+keys,+not+your+names;Self-hosted+%C2%B7+Open+protocols+%C2%B7+User-owned+data" alt="Typing SVG" /></a>
+The work I care about is **name resolution**: turning a name into what it actually points to on-chain, and being able to show that the answer is real.
 
-</div>
+These days I'm the engine half of other people's projects. They bring the audience, the campaign, everything an engine can't do on its own; I bring the part that still has to be right when a stranger re-runs it.
 
-<br/>
+### The work
 
-<div align="center">
+Same question every time. What changes is the system you ask, and every one of them is unreliable in a different way.
 
-> I build tools that put naming ownership back in users' hands.
-> No cloud gatekeepers. Self-hosted infrastructure.
+| Project | What it does | Reads | State |
+|---|---|---|---|
+| **Freenamers** | Universal name resolver, browser-only, no backend. Forward and reverse. | 9 name services across EVM, Solana and Stacks | [Closed, August&nbsp;2026](https://resolver.freenamers.com "What happened, and what the resolver does now") |
+| **TLDsHNS** | Marketplace and demand signalling for Handshake TLDs. Search, signal, acquire on-chain. | Handshake | In development |
+| **Community App** | Domain toolkit for holders. Web2 utilities next to on-chain lookups. | DNS, WHOIS, on-chain | In development |
+| **Lab** | Prototypes and protocol experiments. Most of it never ships, and that's the point. | whatever the experiment needs | Side project |
 
-</div>
+Freenamers ran until August 2026. The site closed; the resolver didn't.
 
-<br/>
+### What I work with
 
-<img src="./assets/skills.svg" width="100%" />
+**Core frontend.** JavaScript (async/await, promises, race conditions, ES modules), HTML/CSS without a framework, Vite, Git.
 
-<br/>
+**Chain reading. No name-service SDK, on any chain.** viem for EVM, `@solana/web3.js` for Solana, Clarity reads on Stacks. Those are primitives: hashing and transport. Before any of it, a name has to become an identifier, and that part is written here:
 
-<details>
-<summary><strong>Resilience Engineering</strong></summary>
-<br/>
-<div align="center">
+| Name service | What a name has to become | Anchored to |
+|---|---|---|
+| ENS, Basenames, 3DNS, Space&nbsp;ID, UD | a 32-byte node | EIP-137 |
+| **Freename** | a token id | **no public spec. Read off the contract.** |
+| SNS | a program-derived account | SPL |
+| BNS | a Clarity principal | c32check |
+| ENS multichain records | a chain-specific address | ENSIP-9, bech32, base58check |
 
-![Sentry](https://img.shields.io/badge/Sentry-362D59?style=for-the-badge&logo=sentry&logoColor=white)
-![Discord](https://img.shields.io/badge/Webhooks-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-&nbsp;
-<img src="https://img.shields.io/badge/Multi--RPC_Fallback-0a0a20?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Circuit_Breaker-0a0a20?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Retry_with_Backoff-0a0a20?style=for-the-badge" />
+**The part that doesn't show in a stack list.** Resilience engineering for networks you don't control. Public nodes rate-limit you, disagree with each other, answer slowly, or answer `null` when they mean *I don't know*. Names arrive that look identical and aren't. Most of the work is there, and none of it is visible when it goes right.
 
-</div>
-</details>
+**Off to the side.** Python for tooling, containers when something needs one, a native shell. None of it is what I'm hired for, and it stays that way.
 
-<br/>
-
-## :jigsaw: &nbsp;Why this combination is unusual
-
-<br/>
-
-<table>
-<tr>
-<td width="50%">
-
-### Most frontend devs don't touch:
-- RPC nodes & on-chain data encoding
-- `null` responses meaning 5 different things
-- Borsh serialization & ABI decoding
-- Multi-chain failure modes
-
-</td>
-<td width="50%">
-
-### Most blockchain devs don't think about:
-- Skeleton loading & progressive feedback
-- Ad-blocker interference with RPC calls
-- Race conditions between user searches
-- UX during 3-10s blockchain waits
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-<div align="center">
-
-> **The real challenge:** handling providers that silently fail (returning `null` instead of an error)
-> while keeping response times acceptable for the user.
->
-> *Multiple providers · Multiple blockchains · Different failure modes · One search bar*
-
-</div>
-
-<br/>
-
-## :rocket: &nbsp;What I've built
-
-<br/>
-
-<img src="./assets/project-freenamers.svg" width="100%" />
-
-<br/>
-
-<img src="./assets/project-tldshns.svg" width="100%" />
-
-<br/>
-
-<img src="./assets/project-community.svg" width="100%" />
-
-<br/>
-
-<div align="center">
-
-> *More Web2 & Web3 domain utilities are in the works. Everything a domain owner needs, in one place.*
-
-</div>
-
-<br/>
+### How I audit my own work before shipping
 
 <details>
-<summary>:mag: <strong>&nbsp;Audit methodology</strong> / I audit my own code before shipping</summary>
+<summary>The nine axes, one line each</summary>
 
-<br/>
+| Axis | What I check |
+|---|---|
+| **Reliability** | Retry, failover, circuit breaker, cache: is every failure path covered? |
+| **Performance** | Time budget per resolution path, redundant calls, timeout calibration |
+| **Security** | XSS from malicious on-chain records, input validation, no client-side secrets, CSP |
+| **Maintainability** | Coupling to third-party libs, debt from workarounds, consistent error handling |
+| **Correctness** | Owner vs manager vs resolved address, stale cache, search race conditions |
+| **Edge cases** | Expired names, wallets with hundreds of names, ad-blockers, empty records |
+| **UX under constraint** | Progressive feedback during multi-second waits, typed error states |
+| **Observability** | Per-resolution breadcrumbs, error rates by provider, user feedback loop |
+| **Browser compat** | Ad-blocker interference, neutral URL choices, no wallet extension required |
 
-| | Axe | What I check |
-|:---:|---|---|
-| :shield: | **Reliability** | Retry, fallback, circuit breaker, cache. Every failure path covered? |
-| :zap: | **Performance** | Time budget per resolution path, redundant RPC calls, timeout calibration |
-| :lock: | **Security** | XSS via on-chain records, input validation, no client-side secrets, CSP |
-| :gear: | **Maintainability** | Coupling with third-party libs, technical debt, error handling consistency |
-| :white_check_mark: | **Correctness** | Owner vs manager vs resolved address, stale cache, race conditions |
-| :microscope: | **Edge cases** | Expired domains, 100+ domain wallets, ad-blockers, empty records |
-| :art: | **UX under constraint** | Progressive feedback during 3-10s waits, skeleton loading, typed errors |
-| :bar_chart: | **Observability** | Sentry breadcrumbs, error rates by provider, Discord user feedback |
-| :desktop_computer: | **Browser compat** | Ad-blocker vs RPCs, neutral URL choices, no wallet extension needed |
+Vitest and Playwright for the suites, ESLint for the sinks that render HTML.
 
 </details>
 
-<br/>
+### On closed source
 
-<div align="center">
+The engines I work on are private for now. I'd rather say that plainly than publish a repository and let it imply something it can't prove.
 
-## :incoming_envelope: &nbsp;Get in touch
+Publishing source doesn't establish what actually runs. Without reproducible builds and signed provenance, there is no verifiable link between a repository and the artifact serving you, and for anything running on a server there is no link at all. Open source is an act of good faith. It isn't evidence.
 
-<br/>
+So I put the burden somewhere else. **The outputs are replayable.** When a tool of mine claims a name resolves to an address, it publishes what was queried, on which contract, at which block. You re-run it against any node you trust and you get the same answer, or you don't. You never have to take my word for it, because the claim doesn't rest on the code.
 
-Building in the ecosystem? Working on digital sovereignty tools? Let's talk.
+### What I'm not
 
-<br/>
+I'm not a Solidity developer. I read contracts, I don't write them.<br>
+I'm not a full-stack engineer. The reading tools have no backend, by design.<br>
+I don't use React or Vue for the reading tools. The constraints (bundle size, load time, lazy-loading chain SDKs on demand) pointed to vanilla JS, and it turned out to be the right call. A marketplace is a different problem, and it gets different tools.
 
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/TchikTchakX)
-&nbsp;&nbsp;
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TchikTchakX)
+---
 
-<br/><br/>
-
-<img src="https://komarev.com/ghpvc/?username=TchikTchakX&style=for-the-badge&color=5000ff&label=PROFILE+VIEWS" />
-
-</div>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a20,35:5000ff,65:b0ff00,100:14F195&height=120&section=footer" width="100%" />
+→ [x.com/tchiktchakx](https://x.com/intent/follow?screen_name=tchiktchakx)
