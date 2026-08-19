@@ -45,6 +45,11 @@ Freenamers ran until August 2026. The site closed; the resolver didn't.
 
 Four of those five are written down somewhere public. Freename isn't: it publishes no spec for how a name becomes a token id. I worked that derivation out by reading the contract, and it has been in production ever since.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/handmade-dark.svg">
+  <img src="./assets/handmade-light.svg" width="620" alt="Every resolution path is handmade. No third-party code between the chain and the answer.">
+</picture>
+
 **The part that doesn't show in a stack list.** Resilience engineering for networks you don't control. Public nodes rate-limit you, disagree with each other, answer slowly, or answer `null` when they mean *I don't know*. Names arrive that look identical and aren't. Most of the work is there, and none of it is visible when it goes right.
 
 **Off to the side.** Python for tooling, containers when something needs one, a native shell. None of it is what I'm hired for, and it stays that way.
