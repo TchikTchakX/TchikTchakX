@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 156" width="740" height="156" role="img" aria-label="Five families of naming systems of different kinds, one question asked of each. They agree on nothing, not even on what a name is.">
+  <title>One question, five families that agree on nothing</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .txt { font-size: 12.5px; fill: #e6edf3; }
+    .sub { font-size: 10px; fill: #9198a1; letter-spacing: .05em; }
+    .q   { font-size: 11px; fill: #2dd4bf; letter-spacing: .06em; }
+  </style>
+
+  <rect width="740" height="156" rx="6" fill="#151b23" stroke="#3d444d"/>
+
+  <g transform="translate(20, 20)">
+    <text class="mono q" x="0" y="18">ONE QUESTION</text>
+
+    <g>
+      <g fill="none" stroke="#9198a1" stroke-width="1.2" opacity=".75"><circle cx="6" cy="32" r="6"/></g>
+      <text class="mono txt" x="0" y="56">ENS</text>
+      <text class="mono sub" x="0" y="72">EVM REGISTRIES</text>
+    </g>
+    <g>
+      <g fill="none" stroke="#9198a1" stroke-width="1.2" opacity=".75"><rect x="149" y="26" width="12" height="12" rx="2"/></g>
+      <text class="mono txt" x="148" y="56">SNS</text>
+      <text class="mono sub" x="148" y="72">SOLANA ACCOUNTS</text>
+    </g>
+    <g>
+      <g fill="none" stroke="#9198a1" stroke-width="1.2" opacity=".75"><path d="M292 38 l 7 -12 l 7 12 z"/></g>
+      <text class="mono txt" x="292" y="56">BNS</text>
+      <text class="mono sub" x="292" y="72">STACKS &#183; BITCOIN</text>
+    </g>
+    <g>
+      <g fill="none" stroke="#9198a1" stroke-width="1.2" opacity=".75"><path d="M430 26 h 12 v 12 h -12 z" transform="rotate(45 436 32)"/></g>
+      <text class="mono txt" x="430" y="56">HNS</text>
+      <text class="mono sub" x="430" y="72">OWN ROOT ZONE</text>
+    </g>
+    <g>
+      <g fill="none" stroke="#9198a1" stroke-width="1.2" opacity=".75"><path d="M594 26 v 12 M588 32 h 12"/></g>
+      <text class="mono txt" x="588" y="56">DNS</text>
+      <text class="mono sub" x="588" y="72">ICANN ROOT</text>
+    </g>
+
+    <line x1="0" y1="92" x2="700" y2="92" stroke="#4d545c" stroke-width="1" opacity=".5"/>
+    <text class="mono sub" x="0" y="108">FIVE FAMILIES THAT AGREE ON NOTHING, NOT EVEN ON WHAT A NAME IS</text>
+  </g>
+</svg>
