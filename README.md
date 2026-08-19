@@ -60,9 +60,8 @@ Two crafts that rarely meet, and each is blind exactly where the other looks.
 
 | A frontend dev rarely meets | A chain dev rarely worries about |
 |---|---|
-| a source that answers wrongly instead of failing | what the screen shows while the answer is still coming |
-| one question that needs five incompatible derivations | a reader with no wallet extension, behind an ad-blocker |
-| data written by a stranger, rendered in your own page | whether a partial answer is still an honest one |
+| one question that needs five incompatible derivations | whether a partial answer is still an honest one |
+| a name that exists, is owned, and points at nothing | a reader who never finds out which of the two happened |
 
 ### How I audit my own work before shipping
 
