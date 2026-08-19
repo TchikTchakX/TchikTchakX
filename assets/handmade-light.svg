@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 68" width="700" height="68" role="img" aria-label="Every resolution path is handmade. No third-party code between the chain and the answer.">
+  <title>Every resolution path here is handmade</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .txt { font-size: 15.5px; fill: #1f2328; }
+    .sub { font-size: 12.5px; fill: #59636e; }
+  </style>
+
+  <path d="M8 24 Q 106 19, 208 23 T 402 22 T 512 25" fill="none" stroke="#b0ff00" stroke-width="22" stroke-linecap="round" opacity=".42"/>
+
+  <text class="mono txt" x="6" y="29">Every resolution path here is handmade.</text>
+  <text class="mono sub" x="6" y="56">No third-party code between the chain and the answer.</text>
+</svg>
