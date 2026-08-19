@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 908 222" width="908" height="222" role="img" aria-label="A claim and the coordinates to replay it: a name, an address, the chain, the contract and the block, so anyone can re-run it.">
+  <title>A claim, and what it takes to replay it</title>
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .key  { font-size: 15px; fill: #1f2328; }
+    .sm   { font-size: 12.5px; fill: #1f2328; }
+    .lbl  { font-size: 10.5px; fill: #1f2328; opacity: .5; letter-spacing: .06em; }
+    .cap  { font-size: 10.5px; fill: #1f2328; opacity: .38; letter-spacing: .07em; }
+    .line { stroke: #1f2328; opacity: .22; stroke-width: 1; fill: none; }
+    .lane { stroke: #1f2328; opacity: .16; stroke-width: 1; }
+
+    /* La composition se construit UNE fois et reste lisible.
+       Seule la verification rejoue, en boucle lente. */
+    @keyframes rise    { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes recheck { 0% { stroke-dashoffset: 42 } 11% { stroke-dashoffset: 0 } 100% { stroke-dashoffset: 0 } }
+
+    .a-key { animation: rise .40s ease-out  .10s both; }
+    .a-c1  { animation: rise .34s ease-out  .70s both; }
+    .a-c2  { animation: rise .34s ease-out 1.10s both; }
+    .a-c3  { animation: rise .34s ease-out 1.50s both; }
+    .a-win { animation: rise .45s ease-out 1.95s both; }
+    .a-recheck { stroke-dasharray: 42; animation: recheck 6.5s linear 3.2s infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .a-key, .a-c1, .a-c2, .a-c3, .a-win, .a-recheck { animation: none; opacity: 1; }
+      .a-recheck { stroke-dasharray: none; }
+    }
+  </style>
+
+  <rect width="908" height="222" rx="10" fill="#eef3f2"/>
+
+  <g transform="translate(34, 14)">
+    <text class="mono lbl" x="0" y="24">THE CLAIM</text>
+
+    <g class="a-key">
+      <text class="mono key" x="0" y="62">vitalik.eth</text>
+      <path class="line" d="M112 57 H 162"/>
+      <path class="line" d="M154 52 L 162 57 L 154 62"/>
+      <text class="mono key" x="178" y="62">0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045</text>
+    </g>
+
+    <line class="lane a-key" x1="0" y1="86" x2="596" y2="86"/>
+
+    <g class="a-c1">
+      <text class="mono lbl" x="0" y="110">CHAIN</text>
+      <text class="mono sm"  x="96" y="110">ethereum</text>
+    </g>
+    <g class="a-c2">
+      <text class="mono lbl" x="0" y="134">CONTRACT</text>
+      <text class="mono sm"  x="96" y="134">0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e</text>
+    </g>
+    <g class="a-c3">
+      <text class="mono lbl" x="0" y="158">BLOCK</text>
+      <text class="mono sm"  x="96" y="158">25 790 552</text>
+    </g>
+
+    <g class="a-win">
+      <path class="line" d="M636 44 H 628 V 166 H 636"/>
+      <text class="mono lbl" x="660" y="98">RE-RUN IT</text>
+      <path class="a-recheck" d="M662 118 l 9 9 l 17 -19" fill="none" stroke="#0f766e" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="mono" x="700" y="126" font-size="13" fill="#0f766e">same answer</text>
+    </g>
+
+    <text class="mono cap" x="0" y="190">ANY NODE &#183; ANY TIME</text>
+  </g>
+</svg>
