@@ -17,7 +17,7 @@ Same question every time. What changes is the system you ask, and every one of t
 
 | Project | What it does | Reads | State |
 |---|---|---|---|
-| **Freenamers** | Universal name resolver, browser-only, no backend. Forward and reverse. | 9 name services across EVM, Solana and Stacks | [Closed, August&nbsp;2026](https://resolver.freenamers.com "What happened, and what the resolver does now") |
+| **Freenamers** | Universal name resolver, browser-only, no backend. Forward and reverse. | 9 name services across EVM, Solana and Stacks | [Closed, August&nbsp;2026](https://freenamers.com "What happened, and what the resolver does now") |
 | **TLDsHNS** | Marketplace and demand signalling for Handshake TLDs. Search, signal, acquire on-chain. | Handshake | In development |
 | **Community App** | Domain toolkit for holders. Web2 utilities next to on-chain lookups. | DNS, WHOIS, on-chain | In development |
 | **Lab** | Prototypes and protocol experiments. Most of it never ships, and that's the point. | whatever the experiment needs | Side project |
