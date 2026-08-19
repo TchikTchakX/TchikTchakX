@@ -30,17 +30,27 @@ Freenamers ran until August 2026. The site closed; the resolver didn't.
 
 **Chain reading. No name-service SDK, on any chain.** viem for EVM, `@solana/web3.js` for Solana, Clarity reads on Stacks. Those are primitives: hashing and transport. Before any of it, a name has to become an identifier, and that part is written here:
 
-| Name service | What a name has to become | Anchored to |
-|---|---|---|
-| ENS, Basenames, 3DNS, Space&nbsp;ID, UD | a 32-byte node | EIP-137 |
-| **Freename** | a token id | **no public spec. Read off the contract.** |
-| SNS | a program-derived account | SPL |
-| BNS | a Clarity principal | c32check |
-| ENS multichain records | a chain-specific address | ENSIP-9, bech32, base58check |
+| Name service | What a name has to become |
+|---|---|
+| ENS, Basenames, 3DNS, Space&nbsp;ID, UD | a 32-byte node |
+| Freename | a token id |
+| SNS | a program-derived account |
+| BNS | a Clarity principal |
+| ENS multichain records | a chain-specific address |
 
 **The part that doesn't show in a stack list.** Resilience engineering for networks you don't control. Public nodes rate-limit you, disagree with each other, answer slowly, or answer `null` when they mean *I don't know*. Names arrive that look identical and aren't. Most of the work is there, and none of it is visible when it goes right.
 
 **Off to the side.** Python for tooling, containers when something needs one, a native shell. None of it is what I'm hired for, and it stays that way.
+
+### Why this combination is rare
+
+Two crafts that rarely meet, and each is blind exactly where the other looks.
+
+| A frontend dev rarely meets | A chain dev rarely worries about |
+|---|---|
+| a source that answers wrongly instead of failing | what the screen shows while the answer is still coming |
+| one question that needs five incompatible derivations | a reader with no wallet extension, behind an ad-blocker |
+| data written by a stranger, rendered in your own page | whether a partial answer is still an honest one |
 
 ### How I audit my own work before shipping
 
