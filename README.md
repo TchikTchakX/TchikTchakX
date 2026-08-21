@@ -3,7 +3,7 @@
   <img src="./assets/header-light.svg" width="100%" alt="A claim and the coordinates to replay it: vitalik.eth, the address it resolves to, the chain, the contract and the block, so anyone can re-run it.">
 </picture>
 
-# Hi, I'm TchikTchakX
+# Hi, I'm Tchik.Tchak
 
 I build browser-only clients that read blockchains directly. For that kind of work: no backend, no API keys, no framework. Just vanilla JS, RPC nodes, and a lot of async debugging.
 
